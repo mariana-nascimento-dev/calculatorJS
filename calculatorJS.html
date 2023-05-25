@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator JS</title>
+</head>
+
+<body>
+
+  <script>
+    let firstNumber = Number(prompt("Enter here the first number:"))
+    let secondNumber = Number(prompt("Enter here the second number:"))
+
+    let sum = firstNumber + secondNumber
+    let sub = firstNumber - secondNumber
+    let mult = firstNumber * secondNumber
+    let division = (firstNumber / secondNumber).toFixed(2)
+    let restDivision = firstNumber % secondNumber
+    let restOfTheSum = sum % 2
+
+
+    alert(`The sum of the entered numbers is: ${sum}`)
+    alert(`The subtraction of the entered numbers is: ${sub} `)
+    alert(`The multiplication of the entered numbers is: ${mult} `)
+    alert(`The division of the entered numbers is: ${division} `)
+    alert(`The division rest of the entered numbers is: ${restDivision} `)
+
+
+    if(restOfTheSum == 0) {
+      alert(`The result of the sum of the entered numbers is an even number: ${sum}`)
+    } else {
+      alert(`The result of the sum of the entered numbers is an odd number: ${sum}`)
+    }
+
+    if(firstNumber == secondNumber) {
+      alert("The entered numbers are the same.")
+    } else {
+      alert("The entered numbers are different.")
+    }
+
+  </script>
+
+  
+</body>
+</html>
